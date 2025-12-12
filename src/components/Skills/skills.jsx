@@ -6,7 +6,15 @@ const Skills = () => {
     <section className='skills-container'>
         <h5>Technical Profeiciency</h5>
         <div className='skills-content'>
-            <div className='skills'></div>
+            <div className='skills'>
+              {SKiLLS.map((item) => (
+                <SkillCard
+                key={item.title}
+                iconUrl={item.icon}
+                title={item.title}
+                />
+              ))}
+            </div>
             <div className='skills-info'></div>
 
         </div>
